@@ -1,40 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Website and Portfolio</title>
-    <link rel='stylesheet' href="Style.css"
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="Style2.css">
 </head>
+
 <body>
-<div id="header"></div>    
-    <div class="'container">
-        <nav>
-            <img src="">
-            <ul>
-                <li><a href='#'>Home</a></li>
-                <li><a href='#'>About</a></li>
-                <li><a href='#'>Services</a></li>
-                <li><a href='#'>Portfolio</a></li>
-                <li><a href='#'>Contact</a></li>
-            </ul>
-        </nav>
-    </div class="header-text">
-        <p>Graduate from Emory University</p>
-        <h1>Hello! I'm Larry Chen!</h1>
-    </div>
-    <div id="about">
-        <div class = "container">
-            <div class = "row">
-                <div class="about-col-1">
-                    <img src="user.png"
-                </div>
-                <div class="about-col-2">
-
-                </div>
+    <div class='container'>
+    <div class="calculator">
+        <form>
+            <div class="display">
+                <input type='text' name='display'>
             </div>
-        </div>
-    </div>
+            <div>
+                <input type='button' value="DE" onclick=" display.value = '' ">
+                <input type='button' value="=" onclick=" display.value = eval(display.value)">
+                <input type='button' value="+" onclick=" display.value += '+' ">
+                <input type='button' value="-" onclick=" display.value += '-' ">
+            </div>
 
+            <div>
+                <input type='button' value="*" onclick=" display.value += '*' ">
+                <input type='button' value="/" onclick=" display.value += '/' ">
+                <input type='button' value="1" onclick=" display.value += '1' ">
+                <input type='button' value="2" onclick=" display.value += '2' ">
+            </div>
+
+            <div>
+                <input type='button' value="3" onclick=" display.value += '3' ">
+                <input type='button' value="4" onclick=" display.value += '4' ">
+                <input type='button' value="5" onclick=" display.value += '5' ">
+                <input type='button' value="6" onclick=" display.value += '6' ">
+            </div>
+
+            <div>
+                <input type='button' value="7" onclick=" display.value += '7' ">
+                <input type='button' value="8" onclick=" display.value += '8' ">
+                <input type='button' value="9" onclick=" display.value += '9' ">
+                <input type='button' value="0" onclick=" display.value += '0' ">
+            </div>
+        </form>
+    </div>
+    </div>
 </body>
+
 </html>
